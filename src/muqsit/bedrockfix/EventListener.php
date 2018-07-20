@@ -33,7 +33,7 @@ class EventListener implements Listener {
      $os = ["Unknown", "Android", "iOS", "macOS", "FireOS", "GearVR", "HoloLens", "Windows 10", "Windows", "Dedicated", "Orbis", "NX"];
      $cdata = $this->PlayerData[$player->getName()];
      if ($os[$cdata["DeviceOS"]] == "Windows" or $os[$cdata["DeviceOS"]] == "Windows 10") {
-      if ($event->getAction() == $event::RIGHT_CLICK_BLOCK or $event->getAction() == $event::RIGHT_CLICK_BLOCK) {
+      if ($event->getAction() == $event::RIGHT_CLICK_BLOCK) {
          $this->taps[$player->getName()]++;
          if ($this->taps[$player->getName()] == 7) {
          $this->taps[$player->getName()] == 0;           
