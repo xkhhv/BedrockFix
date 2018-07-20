@@ -7,6 +7,7 @@ namespace muqsit\bedrockfix;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\network\mcpe\protocol\SetEntityDataPacket;
+use pocketmine\event\player\PlayerInteractEvent;
 
 class EventListener implements Listener {
 
