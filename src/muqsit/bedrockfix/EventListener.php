@@ -35,6 +35,7 @@ class EventListener implements Listener {
      if ($os[$cdata["DeviceOS"]] == "Windows" or $os[$cdata["DeviceOS"]] == "Windows 10") {
       if ($event->getAction() == $event::RIGHT_CLICK_BLOCK) {
          $this->taps[$player->getName()]++;
+         $event->setCancelled($this->taps[$player->getName()] < 7);           
          if ($this->taps[$player->getName()] == 7) {
          $this->taps[$player->getName()] == 0;           
          }
